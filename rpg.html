@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,56 +8,68 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='rpg.css'>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-    <script src='main.js'></script>
-</head>
-<body>
-    <h1>Crie sua Ficha de RPG =D</h1>
-    
-    <div>
-        <p>Informe seu nome:</p>
-        <input type="text">
-    </div>
-    <div>
-        <p>Informe sua idade:</p>
-        <input type="number">
-    </div>
-    <div>
-        <p>Informe sua raça:</p>
-        <select>
-            <option>Humano</option>
-            <option>Esqueleto</option>
-            <option>Hypnobrai</option>
-            <option>Fangpyre</option>
-            <option>Constrictai</option>
-            <option>Venomari</option>
-            <option>Anacondrai</option>
-            <option>Nindroids</option>
-            <option>Stone Army</option>
-            <option>Fantasma</option>
-            <option>Djinn</option>
-            <option>Formlings</option>
-            <option>Tritões</option>
-            <option>Insectoids</option>
-            <option>Vermillion</option>
-            <option>Yeti</option>
-            <option>Lobos da Neve</option>
-        </select>
-    </div>
-    <div>
-        <p>Informe seu nivel:</p>
-        <input type="number">
-    </div>
-    <div>
-        <p>Informe sua historia:</p>
-        <textarea></textarea>
-    </div>
-    <div>
-        <p>Informe seu objetivo:</p>
-        <textarea></textarea>
-    </div>
 
-    <script>
-        
-    </script>
+</head>
+
+<body>
+    <header class="banner">
+        <div class="banner-content">
+            <h1>Ninjago RPG - Ficha</h1>
+            <p class="subtitulo">Preencha as informações dos seus personagens</p>
+
+        </div>
+    </header>
+    <main class="container">
+        <section class="ficha">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome do seu personagem">
+            </div>
+            <div class="campo">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Digite a idade de seu personagem">
+            </div>
+            <div class="campo">
+                <label for="raca">Raça</label>
+                <select id="raca" name="raca">
+                    <option value="">Selecione uma raça</option>
+                    <option>Humano</option>
+                    <option>Esqueleto</option>
+                    <option>Hypnobrai</option>
+                    <option>Fangpyre</option>
+                    <option>Constrictai</option>
+                    <option>Venomari</option>
+                    <option>Anacondrai</option>
+                    <option>Nindroids</option>
+                    <option>Stone Army</option>
+                    <option>Fantasma</option>
+                    <option>Djinn</option>
+                    <option>Formlings</option>
+                    <option>Tritões</option>
+                    <option>Insectoids</option>
+                    <option>Vermillion</option>
+                    <option>Yeti</option>
+                    <option>Lobos da Neve</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="nivel">Nível:</label>
+                <input type="number" id="nivel" name="nivel" placeholder="Digite o nível">
+            </div>
+            <div class="campo">
+                <label for="historia">História:</label>
+                <textarea id="historia" name="historia" rows="5" placeholder="Digite a história"></textarea>
+            </div>
+            <div class="campo">
+                <label for="objetivo">Objetivo:</label>
+                <textarea id="objetivo" name="objetivo" rows="5" placeholder="Descreva o objetivo"></textarea>
+            </div>
+            <div class="acoes">
+                <button type="button">Salvar Ficha</button>
+            </div>
+            <script src='main.js'></script>
+        </section>
+    </main>
 </body>
+
 </html>
