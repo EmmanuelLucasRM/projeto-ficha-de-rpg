@@ -25,7 +25,9 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+
 .ficha {
+    
     width: 80%;
     max-width: 600px;
     margin: 30px auto;
@@ -82,4 +84,32 @@ button {
 
 * {
     box-sizing: border-box;
+}
+
+.atributo-carisma {
+    color: rgb(240, 146, 162);
+}
+
+.atributo-constituicao {
+    color: rgb(40, 177, 40);
+}
+
+.atributo-destreza {
+    color: rgb(182, 182, 79)
+}
+
+.atributo-energia {
+    color: rgb(121, 40, 121);
+}
+
+.atributo-forca {
+    color: rgb(253, 63, 63);
+}
+
+.atributo-inteligencia {
+    color: rgb(120, 194, 219);
+}
+
+.atributo-vontade {
+    color: gray;
 }
