@@ -6,168 +6,23 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>RPG</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='rpg.css'>
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="banner">
-        <div class="banner-content">
-            <h1>Ninjago RPG - Ficha</h1>
-            <p class="subtitulo">Preencha as informações dos seus personagens</p>
-
-        </div>
-    </header>
-    <main class="container">
-
-        <section class="ficha">
-            <h3>Informações Basicas</h3>
-            <section class="info">
-
-                <div class="campo">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite o nome do seu personagem">
-                </div>
-                <div class="campo">
-                    <label for="idade">Idade:</label>
-                    <input type="number" id="idade" name="idade" placeholder="Digite a idade de seu personagem">
-                </div>
-                <div class="campo">
-                    <label for="raca">Raça</label>
-                    <select id="raca" name="raca">
-                        <option value="">Selecione uma raça</option>
-                        <option>Humano</option>
-                        <option>Esqueleto</option>
-                        <option>Hypnobrai</option>
-                        <option>Fangpyre</option>
-                        <option>Constrictai</option>
-                        <option>Venomari</option>
-                        <option>Anacondrai</option>
-                        <option>Nindroids</option>
-                        <option>Stone Army</option>
-                        <option>Fantasma</option>
-                        <option>Djinn</option>
-                        <option>Formlings</option>
-                        <option>Tritões</option>
-                        <option>Insectoids</option>
-                        <option>Vermillion</option>
-                        <option>Yeti</option>
-                        <option>Lobos da Neve</option>
-                    </select>
-                </div>
-                <div class="campo">
-                    <label for="elemento">Elemento:</label>
-                    <input type="text" name="elemento" id="elemento" placeholder="Digite seu elemento">
-                </div>
-                <div class="campo">
-                    <label for="profissao">Profissão:</label>
-                    <select name="profissao" id="profissao">
-                        <option value="">Selecione uma profissão</option>
-                        <option>Ferreiro</option>
-                        <option>Inventor</option>
-                        <option>Dançarino</option>
-                        <option>Cozinheiro</option>
-                        <option>Mecânico</option>
-                        <option>Policial</option>
-                        <option>Médico</option>
-                        <option>Lutador Marcial</option>
-                        <option>Minerador</option>
-                        <option>Influenciador Digital</option>
-                        <option>Atleta</option>
-                        <option>Carpinteiro</option>
-                        <option>Estudioso</option>
-                    </select>
-                </div>
-                <div class="campo">
-                    <label for="historia">História:</label>
-                    <textarea id="historia" name="historia" rows="5" placeholder="Digite a história"></textarea>
-                </div>
-                <div class="campo">
-                    <label for="objetivo">Objetivo:</label>
-                    <textarea id="objetivo" name="objetivo" rows="5" placeholder="Descreva o objetivo"></textarea>
-                </div>
-            </section>
-            <h3>Atributos</h3>
-            <section class="atributos">
-                <div class="atributo">
-                    <div class="atributo-carisma">
-                        <p class="nome-atributo">Carisma</p>
-                        <div class="controle">
-                            <button id="carisma-menos">-</button>
-                            <span id="carisma-valor">0</span>
-                            <button id="carisma-mais">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="atributo">
-                    <div class="atributo-constituicao">
-                        <p class="nome-atributo">Constituição</p>
-                        <div class="controle">
-                            <button id="constituicao-menos">-</button>
-                            <span id="constituicao-valor">0</span>
-                            <button id="constituicao-mais">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="atributo">
-                    <div class="atributo-destreza">
-                        <p class="nome-atributo">Destreza</p>
-                        <div class="controle">
-                            <button id="destreza-menos">-</button>
-                            <span id="destreza-valor">0</span>
-                            <button id="destreza-mais">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="atributo">
-                    <div class="atributo-energia">
-                        <p class="nome-atributo">Energia</p>
-                        <div class="controle">
-                            <button id="energia-menos">-</button>
-                            <span id="energia-valor">0</span>
-                            <button id="energia-mais">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="atributo">
-                    <div class="atributo-forca">
-                        <p class="nome-atributo">Força</p>
-                        <div class="controle">
-                            <button id="forca-menos">-</button>
-                            <span id="forca-valor">0</span>
-                            <button id="forca-mais">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="atributo">
-                    <div class="atributo-inteligencia">
-                        <p class="nome-atributo">Inteligência</p>
-                        <div class="controle">
-                            <button id="inteligencia-menos">-</button>
-                            <span id="inteligencia-valor">0</span>
-                            <button id="inteligencia-mais">+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="atributo">
-                    <div class="atributo-vontade">
-                        <p class="nome-atributo">Vontade</p>
-                        <div class="controle">
-                            <button id="vontade-menos">-</button>
-                            <span id="vontade-valor">0</span>
-                            <button id="vontade-mais">+</button>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <div class="acoes">
-                <button type="button">Salvar Ficha</button>
-            </div>
-            <script src='rpg.js'></script>
-        </section>
-    </main>
+    <nav>
+        <div class="logo">Mesa<span>RPG</span></div>
+        <ul>
+            <li><a href="#rpgs">RPGs</a></li>
+            <li><a href="#sessoes">Sessões</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <button>Entrar</button>
+        <button>Começar</button>
+    </nav>
+    <script src='script.js'></script>
 </body>
 
 </html>
